@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Parisienne:wght@400&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baskervville:wght@400&display=swap" />
+<link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de Navegación</title>
+    <style>
+        section {
+            height: 100vh;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav class="nav">
+        <a class="seccio1" href="#seccion1">Inicio</a>
+        <a class="seccio1" href="#seccion2">Proyectos</a>
+        <a class="seccio1" href="#seccion3">Contacto</a>
+    </nav>
+
+    <!-- Secciones de la página -->
+    <section class="seccion1" id="seccion1">
+        <h1 class="tipo1">Hola! Soy <span class="highlight">Eli</span>, una <span class="highlight">Ilustradora</span></h1>
+            <p class="text">
+                Soy <span class="highlight1">Eli</span> y me mantengo enfocada en crear momentos que conecten emocionalmente con el público.
+                Mi marca personal se basa en la combinación de estética, emoción y sentimiento.
+            </p>
+    </section>
+    <section class="seccion2" id="seccion2">
+        <h1 class="highlight">Proyectos</h1>
+        <div class="galeria">
+            <img src="prresentacion.jpeg" alt="Ilustración 1">
+            <img src="area-2_3.jpeg" alt="Ilustración 2">
+            <img src="blog 2.jpeg" alt="Ilustración 3">
+            <img src="blog1.jpeg" alt="Ilustración 4">
+        </div>
+    </section>
+    <section class="seccion3" id="seccion3">
+
+        <footer class="footer">
+            <div class="footer__content">
+              <p class="footer__text">¡Creando recuerdos para la historia!</p>
+              <form class="footer__form" aria-label="Formulario de contacto">
+                <div class="footer__form-group">
+                  <label class="footer__label" for="email">Correo electrónico</label>
+                  <input 
+                    class="footer__input" 
+                    type="email" 
+                    id="email" 
+                    placeholder="Introduce tu correo" 
+                    required 
+                    aria-required="true" 
+                  />
+                </div>
+                <div class="footer__form-group">
+                  <label class="footer__label" for="message">Tu mensaje</label>
+                  <textarea 
+                    class="footer__textarea" 
+                    id="message" 
+                    placeholder="Describe tu proyecto" 
+                    rows="4" 
+                    required 
+                    aria-required="true"
+                  ></textarea>
+                </div>
+                <button class="footer__button" type="submit">Enviar</button>
+              </form>
+            </div>
+          </footer>
+          
+    </section>
+    <link rel="stylesheet" href="script.js">
+</body>
+</html>

@@ -1,0 +1,210 @@
+/* Custome properties*/
+:root {
+    
+    /* fonts */
+    --font-baskervville: Baskervville;
+    --font-parisienne: Parisienne;
+    
+    /* Colors */
+    --crema: #ffecd1;
+    --arequipe: #664c27;
+    --crema-quemada: #ccb99f;
+    --cafe: #997e59;
+    --beso: #a92d00;
+    --chocholate: #332209;
+    --white: #fff;
+    
+    /* Paddings */
+    --padding-6xs: 7px;
+    --padding-8xs: 5px;
+    --padding-xl: 20px;
+    --padding-21xl: 40px;
+    --padding-mid: 17px;
+}
+
+/* Estilo global */
+body {
+    margin: 0;
+    font-family:var(--font-baskervville);
+    background: var(--crema); /* Fondo principal claro */
+    color: #332209; /* Texto en marrón oscuro */
+    line-height: 1.6;
+}
+
+/* Menú de navegación */
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--crema); /* Fondo cálido neutro */
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    font-family: var(--font-baskervville);
+}
+
+
+.seccio1{
+    text-decoration: none;
+    color: var(--chocholate); /* Texto marrón oscuro */
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 20px;
+    background: var(--crema-quemada); /* Botones marrón medio */
+    transition: all 0.3s ease-in-out;
+}
+
+.seccio1:hover {
+    background: var(--cafe); /* Efecto hover marrón intenso */
+    transform: scale(1.1);
+}
+
+/* Secciones */
+section {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--chocholate);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* Colores para cada sección */
+#seccion1 {
+    background: linear-gradient(135deg, #CCB99F, #FFECD1);
+}
+
+#seccion2 {
+    background: linear-gradient(135deg, #997E59, #CCB99F);
+}
+
+#seccion3 {
+    background: linear-gradient(135deg, #664C27, #A92D00);
+    color: var(--cafe); /* Texto en blanco para mayor contraste */
+}
+
+/* Estilo de títulos */
+.tipo1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: var(--beso); /* Rojo marrón vibrante */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+.highlight{
+    font-family: var(--font-parisienne);
+    font-size: 50px;
+}
+/* Párrafos */
+.text {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.highlight1{
+    font-family: var(--font-parisienne);
+    color: var(--color-5);
+    font-size: 25px;
+}
+
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galeria img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+/*seccio de contacto*/
+
+.footer {
+    background-color: var(--crema-quemada);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer__content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .footer__text {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color:var(--white);
+    font-family: var(--font-parisienne);
+  }
+  
+  .footer__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: var(--font-baskervville);
+  }
+  
+  .footer__form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer__label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: var(--);
+  }
+  
+  .footer__input,
+  .footer__textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid var(--crema);
+    border-radius: 5px;
+  }
+  
+  .footer__button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: var(--crema);
+    background-color: var(--cafe);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .footer__button:hover {
+    background-color: var(--arequipe);
+  }
+  
+
+/* Mensaje de bienvenida */
+div[style*="Bienvenido"] {
+    font-family: var(--font-parisienne);
+    font-size: 1rem;
+    color: var(--white); /* Texto en blanco */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--arequipe);
+    background: var(--beso);
+}
+
+/* Transiciones y diseño estético */
+a, h1, p, nav  {
+    transition: all 0.3s ease-in-out;
+}
+
+section:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);}
